@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".composeFragment">
+
+    <Button
+        android:id="@+id/tbCreate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tbRefresh"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_border"
+        android:text="create" />
+
+    <Button
+        android:id="@+id/tbRefresh"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/button_border"
+        android:text="refresh" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tbCamera"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="enter description here"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/d-ivImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_above="@+id/etDescription"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/app" />
+
+    <Button
+        android:id="@+id/tbCamera"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tbCreate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_border"
+        android:text="camera" />
+
+</RelativeLayout>

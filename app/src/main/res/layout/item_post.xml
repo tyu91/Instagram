@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/d-ivImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/d-ivImage"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="username"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPost"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLike"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:hint="Post Text"
+        android:textAlignment="viewStart"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivLike"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/d-ivImage"
+        android:layout_below="@+id/d-ivImage"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/ufi_heart" />
+
+    <ImageView
+        android:id="@+id/ivComment"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/ivLike"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/ivLike"
+        app:srcCompat="@drawable/ufi_comment" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/d-ivImage"
+        android:layout_below="@+id/tvPost"
+        android:layout_marginTop="5dp"
+        android:hint="Time" />
+</RelativeLayout>

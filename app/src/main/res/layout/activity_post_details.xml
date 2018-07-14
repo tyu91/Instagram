@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+    <ImageView
+        android:id="@+id/d-ivImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@android:color/black" />
+
+    <TextView
+        android:id="@+id/d-tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/d-ivImage"
+        android:layout_marginBottom="5dp"
+        android:hint="username" />
+
+    <TextView
+        android:id="@+id/d-tvPost"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d-ivImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:hint="Post Text" />
+
+    <TextView
+        android:id="@+id/d-tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/d-ivImage"
+        android:layout_alignParentTop="true"
+        android:text="date" />
+</RelativeLayout>

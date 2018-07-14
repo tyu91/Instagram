@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Parsetagram</string>
+    <string name="profile">profile</string>
+    <string name="compose">compose</string>
+    <string name="timeline">timeline</string>
+    <string name="action_logout">logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
